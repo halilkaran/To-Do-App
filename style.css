@@ -1,0 +1,198 @@
+@import 'https://fonts.googleapis.com/css?family=Hind';
+@import 'https://fonts.googleapis.com/css?family=Quicksand';
+
+body {
+  background: linear-gradient(to bottom, #435f7a, #8c2e24);
+  background-attachment: fixed;
+}
+
+input,
+button {
+  outline: none;
+}
+
+#listConTop #addList,
+#listCon div #liID,
+#listCon div #liIDchck, 
+#listCon div #checkID,
+#listCon div #delID {
+  -webkit-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+
+#listCon div #liID,
+#listCon div #checkID,
+#listCon div #liIDchck,
+#listCon div #delID {
+  color: #ecf0f1;
+  background: #2c3e50;
+  float: left;
+  line-height: 60px;
+  border-bottom: none;
+  letter-spacing: 1px;
+  font-family: "Quicksand", sans-serif;
+}
+
+#toDoList {
+  font-family: "Quickstand", sans-serif;
+  margin: 25px;
+  font-size: 300%;
+  font-weight: bold;
+  text-align: center;
+  color: #ecf0f1;
+  text-shadow: 0 0 16px #162029;
+  margin-top: 30vh;
+}
+
+#canvas {
+  box-shadow: 0px 17px 19px #162029;
+  margin: 0 auto;
+  width: 400px;
+  background: #2c3e50;
+  border-radius: 15px 15px 0 0;
+}
+
+#listConTop {
+  border-radius: 15px 15px 0 0;
+  height: 62px;
+  background: #e74c3c;
+}
+#listConTop input {
+  border-radius: 15px 0 0 0;
+  background: #e74c3c;
+  color: #ecf0f1;
+  width: 73%;
+  font-size: 140%;
+  border: 0;
+  float: left;
+  padding-left: 30px;
+  display: inline-block;
+  height: 60px;
+}
+#listConTop #addList {
+  background: #e74c3c;
+  border: 0;
+  color: #ecf0f1;
+  width: 15%;
+  font-size: 140%;
+  display: inline;
+  line-height: 60px;
+  float: left;
+  text-shadow: 0px 0px 5px #2c3e50;
+  cursor: pointer;
+}
+#listConTop #addList:hover {
+  font-size: 170%;
+}
+
+::-webkit-input-placeholder {
+  color: #f0f4f5;
+  text-shadow: 0px 0px 5px #2c3e50;
+}
+
+#listCon {
+  margin-top: 10px;
+  border-bottom: 1px solid #2c3e50;
+  position: relative;
+}
+#listCon:after {
+  position: absolute;
+  width: 400px;
+  height: 15px;
+  content: "";
+  border-radius: 0 0 15px 15px;
+  background: #2c3e50;
+}
+#listCon:before {
+  position: absolute;
+  z-index: 1;
+  height: 15px;
+  width: 400px;
+  content: "";
+  color: transparent;
+  background: #2c3e50;
+  background-image: linear-gradient(0deg, #2c3e50 20%, #141c24 100%);
+  margin-top: -10px;
+}
+#listCon div {
+  height: 60px;
+  width: 400px;
+}
+#listCon div #liID {
+  height: 60px;
+  padding-left: 30px;
+  text-align: left;
+  font-size: 90%;
+  letter-spacing: -0.5px;
+  text-shadow: 0 0 15px black;
+  width: 60%;
+}
+#listCon div #liIDchck {
+  height: 60px;
+  padding-left: 30px;
+  text-align: left;
+  font-size: 90%;
+  letter-spacing: -0.5px;
+  text-shadow: 0 0 15px black;
+  width: 60%;
+  text-decoration: line-through;
+}
+
+
+#listCon div #liID:hover {
+  text-shadow: 0 0 10px white;
+}
+#listCon div #liIDchck:hover {
+  text-shadow: 0 0 10px white;
+}
+#listCon div #checkID {
+  cursor: pointer;
+  height: 60px;
+  text-align: center;
+  font-size: 80%;
+  width: 14%;
+}
+#listCon div #checkID:hover {
+  text-shadow: 0 0 15px white;
+  font-size: 100%;
+}
+#listCon div #delID {
+  cursor: pointer;
+  height: 60px;
+  text-align: center;
+  font-size: 80%;
+  text-decoration: none !important;
+  width: 14%;
+}
+#listCon div #delID:hover {
+  text-shadow: 0 0 15px white;
+  font-size: 100%;
+}
+
+#fadeInID {
+  position: relative;
+}
+#fadeInID:after {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  border-bottom: 1px solid grey;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 350px;
+}
+
+.del {
+  display: none;
+  color: white;
+}
+
+.done {
+  @extend: %duration;
+  text-decoration: line-through;
+}
+
+.undo {
+  @extend: %duration;
+  text-decoration: none;
+}
