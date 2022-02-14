@@ -25,41 +25,29 @@ add.addEventListener("click", () => {
     fade.appendChild(del);
 
     list.insertBefore(fade, list.childNodes[0]);
- const chckBtns = document.querySelectorAll("#checkID");
- const li1 = document.querySelectorAll("#liID");
- for (let i in chckBtns) {
-   chckBtns[i].onclick = () => {
-     if (li1[i].id == "liIDchck") {
-       li1[i].id = "liID";
-     } else {
-       li1[i].id = "liIDchck";
-     }
-   };
- }
- const deleteBtns = document.querySelectorAll("#delID");
- for (let i in deleteBtns) {
-   deleteBtns[i].onclick = () => {
-     deleteBtns[i].parentNode.remove();
-   };
- }
-
   
-    }
+      a();
+  }
+});
 
+
+
+let a = () => {
     
-  });
-
-  const chckBtns = document.querySelectorAll("#checkID");
-    const li1 = document.querySelectorAll("#liID");
+const chckBtns = document.querySelectorAll("#checkID");
+const li1 = document.querySelectorAll("#liID");
 for (let i in chckBtns) {
-    chckBtns[i].onclick = () => {
-        if (li1[i].id == "liIDchck") {
-            li1[i].id = "liID";
-        } else {
-            li1[i].id = "liIDchck";
-        }
+  chckBtns[i].onclick = () => {
+    if (li1[i].id == "liIDchck") {
+      li1[i].id = "liID";
+    } else {
+      li1[i].id = "liIDchck";
     }
+  };
 }
+ 
+}
+ a();
 const deleteBtns = document.querySelectorAll("#delID");
 for (let i in deleteBtns) {
   deleteBtns[i].onclick = () => {
@@ -67,14 +55,10 @@ for (let i in deleteBtns) {
   };
 }
 
-
 text.onkeydown = function (e) {
-  
   //? when Enter key is pressed
   if (e.keyCode === 13) {
     //* Call the click function of add button.
     add.click();
   }
-
-  
 };

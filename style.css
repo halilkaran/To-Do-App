@@ -1,5 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Hind';
-@import 'https://fonts.googleapis.com/css?family=Quicksand';
+
 
 body {
   background: linear-gradient(to bottom, #435f7a, #8c2e24);
@@ -180,19 +179,4 @@ button {
   transform: translate(-50%, -50%);
   content: "";
   width: 350px;
-}
-
-.del {
-  display: none;
-  color: white;
-}
-
-.done {
-  @extend: %duration;
-  text-decoration: line-through;
-}
-
-.undo {
-  @extend: %duration;
-  text-decoration: none;
 }
