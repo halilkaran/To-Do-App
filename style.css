@@ -31,7 +31,7 @@ button {
 }
 
 #toDoList {
-  font-family: "Quickstand", sans-serif;
+  font-family: "Quicksand", sans-serif;
   margin: 25px;
   font-size: 300%;
   font-weight: bold;
@@ -63,7 +63,7 @@ button {
   border: 0;
   float: left;
   padding-left: 30px;
-  display: inline-block;
+ 
   height: 60px;
 }
 #listConTop #addList {
