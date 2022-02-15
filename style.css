@@ -1,5 +1,3 @@
-
-
 body {
   background: linear-gradient(to bottom, #435f7a, #8c2e24);
   background-attachment: fixed;
@@ -12,7 +10,7 @@ button {
 
 #listConTop #addList,
 #listCon div #liID,
-#listCon div #liIDchck, 
+#listCon div #liIDchck,
 #listCon div #checkID,
 #listCon div #delID {
   -webkit-transition-duration: 0.8s;
@@ -136,7 +134,6 @@ button {
   width: 60%;
   text-decoration: line-through;
 }
-
 
 #listCon div #liID:hover {
   text-shadow: 0 0 10px white;
